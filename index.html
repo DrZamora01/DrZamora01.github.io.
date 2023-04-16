@@ -21,17 +21,17 @@
         <div class="title">Filter Dataset by Major</div>
       </header>
  <script src="script.js"></script>	    
-      <table id="majorTable"></table>
+      
     </div>
-    <script id="menuTemplate" type="text/x-handlebars-template">
+    <script id="majorTemplate" type="text/x-handlebars-template">
      <table class="table table-striped">
           <tr><th>Name</th><th>Major</th><th>Email</th><th>GPA</th></tr>
       {{#each students}}
       <tr>
-        <td>{{this.name}}</td>
-        <td>{{this.major}}</td>
-        <td>{{this.email}}</td>
-        <td>{{this.gpa}}</td>
+        <td>{{name}}</td>
+        <td>{{major}}</td>
+        <td>{{email}}</td>
+        <td>{{gpa}}</td>
       </tr>
       {{/each}}
       </table>
