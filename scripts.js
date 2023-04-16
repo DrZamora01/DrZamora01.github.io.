@@ -6,7 +6,7 @@ async function getMajorData(selected_major) {
 
         major_items = data.filter((item) => item.major == selected_major);
 
-        var templateText = document.getElementById('menuTemplate').innerHTML;
+        var templateText = document.getElementById('majorTemplate').innerHTML;
         var compiledTemplateText = Handlebars.compile(templateText);
         compiledHtml = compiledTemplateText({ students: major_items })
         document.getElementById('majorTable').innerHTML = compiledHtml;
