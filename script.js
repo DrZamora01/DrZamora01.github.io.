@@ -8,7 +8,7 @@ async function getMajorData(selected_major) {
 
         var templateText = document.getElementById('majorTemplate').innerHTML;
         var compiledTemplateText = Handlebars.compile(templateText);
-        compiledHtml = compiledTemplateText({ students: major_items })
+        compiledHtml = compiledTemplateText({ row: major_items })
         document.getElementById('majorTable').innerHTML = compiledHtml;
     } else {
         document.querySelector('#majorTable').innerHTML = "There was an error"
